@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sistema de mensajería — Flexbox</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+  <div class="app" role="application">
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Lista de contactos">
+      <div class="me">
+        <div class="avatar" aria-hidden="true">M</div>
+        <div class="me__data">
+          <span class="me__name">María</span>
+          <span class="me__status"><span class="dot"></span> Activa ahora</span>
+        </div>
+      </div>
+
+      <div class="new-chat">
+        <button class="btn" id="btnNewChat" type="button" aria-label="Crear nuevo chat">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          Nuevo chat
+        </button>
+      </div>
+
+      <!-- Lista de contactos ---------->
+      <nav class="contacts" id="contacts">
+        <a class="contact" href="#" aria-label="Abrir chat con Juanita" data-name="Juanita">
+          <div class="contact__thumb">
+            <img src="images/maria.jpg" alt="Foto de maria">
+          </div>
+          <div class="contact__meta">
+            <span class="contact__name">Maria</span>
+            <span class="contact__last">At vero eos et accusa…</span>
+          </div>
+        </a>
+
+        <nav class="contacts" id="contacts">
+            <a class="contact" href="#" aria-label="Abrir chat con Juanita" data-name="Juanita">
+              <div class="contact__thumb">
+                <img src="images/alberto.jpg" alt="Foto de alberto">
+              </div>
+              <div class="contact__meta">
+                <span class="contact__name">Alberto</span>
+                <span class="contact__last">At vero eos et accusa…</span>
+              </div>
+            </a>
+
+
+            <nav class="contacts" id="contacts">
+                <a class="contact" href="#" aria-label="Abrir chat con Juanita" data-name="Juanita">
+                  <div class="contact__thumb">
+                    <img src="images/Ignacio.jpg" alt="Foto de Ignacio">
+                  </div>
+                  <div class="contact__meta">
+                    <span class="contact__name">Ignacio</span>
+                    <span class="contact__last">At vero eos et accusa…</span>
+                  </div>
+                </a>
+
+
+                <nav class="contacts" id="contacts">
+                    <a class="contact" href="#" aria-label="Abrir chat con Juanita" data-name="Juanita">
+                      <div class="contact__thumb">
+                        <img src="images/Cristian.jpg" alt="Foto de Cristian">
+                      </div>
+                      <div class="contact__meta">
+                        <span class="contact__name">Cristian</span>
+                        <span class="contact__last">At vero eos et accusa…</span>
+                      </div>
+                    </a>
+
+                    <nav class="contacts" id="contacts">
+                        <a class="contact" href="#" aria-label="Abrir chat con Juanita" data-name="Juanita">
+                          <div class="contact__thumb">
+                            <img src="images/Sofia.jpg" alt="Foto de Sofia">
+                          </div>
+                          <div class="contact__meta">
+                            <span class="contact__name">Sofía</span>
+                            <span class="contact__last">At vero eos et accusa…</span>
+                          </div>
+                        </a>
+
+                        <nav class="contacts" id="contacts">
+                            <a class="contact" href="#" aria-label="Abrir chat con Juanita" data-name="Juanita">
+                              <div class="contact__thumb">
+                                <img src="images/Carolina.jpg" alt="Foto de Carolina">
+                              </div>
+                              <div class="contact__meta">
+                                <span class="contact__name">Carolina</span>
+                                <span class="contact__last">At vero eos et accusa…</span>
+                              </div>
+                            </a>
+
+      </nav>
+    </aside>
+
+    <!-- Sección principal ---------->
+    <main class="main" id="main" aria-label="Sección principal">
+      <section class="hero" id="hero">
+        <div class="logo">
+            <img src="images/hand.png" alt="Logo Networking" />
+          </div>
+          
+        <h1>Comienza el Networking</h1>
+        <p>Presiona el botón <strong>“Nuevo chat”</strong> o selecciona un contacto para empezar.</p>
+      </section> 
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
